@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro</title>
+  </head>
+  <body>
+    <main class="container-cadastro">
+      <section class="container">
+        <h1>Cadastro de Usuário</h1>
+        <form action="#" method="post">
+          <input type="text" class="org-forms" id="nome" placeholder="Nome" name="nome" required>
+          <input type="email" class="org-forms" id="email" placeholder="Email" name="email" required>
+          <input type="password" class="org-forms" id="senha" placeholder="Senha" name="senha" required>
+          
+          <input type="password" class="org-forms" id="confirmar-senha" placeholder="Confirmar-senha" name="confirmar-senha" required>
+          <select name="Genero" class="org-forms" id="">
+            <option value="" disabled selected>Selecione o Gênero</option>
+            <option value="Masculino">Masculino</option>
+            <option value="Feminino">Feminino</option>
+            <option value="Outro">Outro</option>
+          </select>
+          <input type="date" class="org-forms" id="data-nascimento" placeholder="Data de Nascimento" name="data-nascimento" required>
+          <input type="text" class="org-forms" id="cidade" placeholder="Cidade" name="cidade">
+          <input type="text" class="org-forms" id="pais" placeholder="Pais" name="pais">
+          <button type="submit" class="org-button">Cadastrar</button>
+        </section>
+      </form>
+    </main>
+  </body>
+</html>
