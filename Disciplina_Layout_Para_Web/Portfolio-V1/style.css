@@ -1,0 +1,128 @@
+/* RESET BÁSICO */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100dvh;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: -1;
+    }
+
+    .background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+    /* CONTAINER GERAL */
+    .container {
+      background: rgba(15, 32, 39, 0.7);
+      backdrop-filter: blur(12px);
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+      width: 100dvw;
+      max-width: 600px;
+      color: #f1f1f1;
+      z-index: 0;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: #fff;
+      letter-spacing: 1px;
+    }
+
+    /* FORMULÁRIO */
+    form {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    label {
+      display: block;
+      margin: 5px;
+      font-size: 14px;
+      color: #f0f0f0;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="date"] {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-bottom: 2px solid #d3d1b1;
+      border-radius: 5px;
+      background: rgba(255,255,255,0.2);
+      color: #fff;
+      font-size: 16px;
+      outline: none;
+      transition: all 0.3s ease;
+    }
+
+    input:focus {
+      border-color: #00bcd4;
+      background: rgba(255,255,255,0.3);
+    }
+
+    input[type="radio"] {
+      margin: 5px; 
+      accent-color: #00bcd4;
+    }
+
+    /* GÊNERO */
+    .genero {
+      display: flex;
+      width: 100dvw;
+    }
+
+    .genero label {
+        margin-right: 15px;
+        font-weight: 500;
+    }
+
+    /* BOTÃO */
+    button {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 6px;
+      background: rgba(15, 32, 39, 0.8);
+      color: #fff;
+      font-size: 18px;
+      cursor: pointer;
+      margin-top: 15px;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background: rgba(32, 58, 67, 0.9);
+    }
+
+    .logo {
+  position: fixed;         /* fixa o logo na tela */
+  bottom: 20px;            /* distância do fundo */
+  right: 50px;             /* distância da direita */
+  width: 180px;            /* tamanho ajustável */
+  opacity: 0.9;            /* leve transparência */
+  transition: opacity 0.3s ease;
+  z-index: 2;              /* fica acima do fundo, abaixo do formulário */
+}
+
+.logo:hover {
+  opacity: 1;              /* destaca ao passar o mouse */
+}
